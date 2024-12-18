@@ -26,6 +26,8 @@ body {
     background-image: url("img/Background.png"); /*Define uma imagem de fundo*/
     background-repeat: no-repeat; /*Impede a repetição da imagem*/
     background-size: contain; /*Ajusta a imagem para caber dentro do elemento*/
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -42,6 +44,7 @@ body {
     color: var(--branco-principal);/*Define a cor do texto como branco*/
     display: block;/*Faz o botão ocupar toda a largura disponível*/
     text-decoration: none;/*Remove o sublinhado padrão de links*/
+    margin-bottom: 1em; /*Adiciona um espaçamento em baixo do botão*/
 }
 
 .botao_secundario {
@@ -58,4 +61,49 @@ body {
 .container__titulo {
     font-size: 28px;/*Define o tamanho para o texto*/
     font-weight: 700;/*Define o texto como negrito*/
+}
+
+/* Define uma margem superior e inferior para a imagem dentro do container */
+.container__imagem {
+    margin: 1em 0 2em 0; /* 1em em cima, 2em embaixo, 0 nas laterais */
+}
+
+/* Aplica uma margem horizontal (esquerda e direita) no container */
+.container__caixa {
+    margin: 0 6em; /* 6em nas laterais e 0 em cima e embaixo */
+}
+
+/* Define a largura da imagem secundária como 80% do elemento pai */
+.secundario__imagem {
+    width: 80%;
+}
+
+/* Estiliza o container "secundario" */
+.secundario {
+    align-items: center; /* Centraliza os itens verticalmente no container */
+    margin: 0 6em; /* 6em de margem nas laterais, 0 em cima e embaixo */
+}
+
+/* Define o estilo do título da descrição */
+.descricao__titulo {
+    font-weight: 700; /* Define o texto em negrito (peso 700) */
+    font-size: 48px; /* Define um tamanho para a fonte */
+    color: var(--branco-principal); 
+    margin-bottom: 0.1em; /* Define margem inferior */
+}
+
+
+.descricao__texto {
+    color: var(--cinza-secundaria); 
+}
+
+
+.botao__secundario {
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    margin-top: 1em; /* Adiciona uma margem superior */
+}
+
+/* Aplica um espaçamento interno no container de descrição */
+.container__descricao {
+    padding: 2em; /* Adiciona 2em de espaçamento interno em todas as direções */
 }
