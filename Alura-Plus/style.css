@@ -1,26 +1,61 @@
 :root {
+    /*Variáveis CSS para facilitar a manutenção e reutilização de cores e fontes*/
     --branco-principal: #FFFFFF;
     --cinza-secundaria: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
 }
 
 body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
+    /*Estilos globais do corpo da página*/
+    background-color: var(--cor-de-fundo); /*Define a cor de fundo do corpo*/
+    color: var(--branco-principal); /*Define a cor do texto*/
+    font-family: var(--fonte-principal); /*Define a fonte principal*/
+    font-size: 16px; /*Define o tamanho padrão da fonte*/
+    font-weight: 400; /*Define o peso da fonte como normal*/
 }
 
 * {
+    /*Remove o espaçamento padrão do navegador de todos os elementos*/
     margin: 0;
     padding: 0;
 }
 
 .principal {
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url("img/Background.png"); /*Define uma imagem de fundo*/
+    background-repeat: no-repeat; /*Impede a repetição da imagem*/
+    background-size: contain; /*Ajusta a imagem para caber dentro do elemento*/
 }
 
 .container {
-    height: 100vh;
+    height: 100vh; /*Define a aaltura total da tela*/
+    display: grid; /*Define o container como grid*/
+    grid-template-columns: 50% 50%;/*Divide o grid em duas colunas iguais*/
+}
+
+.container__botao {
+    /*botão principal*/
+    background-color: var(--botao-azul);/*Define a cor de fundo azul*/
+    border-radius: 5px;/*Arredonda as bordas*/
+    padding: 1em;/*Adiciona espaçamento interno*/
+    color: var(--branco-principal);/*Define a cor do texto como branco*/
+    display: block;/*Faz o botão ocupar toda a largura disponível*/
+    text-decoration: none;/*Remove o sublinhado padrão de links*/
+}
+
+.botao_secundario {
+    /*botão secundário*/
+    background-color: transparent;/*Define o fundo como transparente*/
+    border: 2px solid var(--branco-principal);/*Define uma borda branca*/
+}
+
+.container__aviso {
+    font-size: 12px; /*Define o tamanho para o texto*/
+    color: var(--cinza-secundaria); /*Define a cor do texto*/
+}
+
+.container__titulo {
+    font-size: 28px;/*Define o tamanho para o texto*/
+    font-weight: 700;/*Define o texto como negrito*/
 }
