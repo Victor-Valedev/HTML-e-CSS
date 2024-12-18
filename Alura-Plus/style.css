@@ -5,6 +5,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-azul-efeito-: #368cf6;
 }
 
 body {
@@ -107,3 +108,80 @@ body {
 .container__descricao {
     padding: 2em; /* Adiciona 2em de espaçamento interno em todas as direções */
 }
+
+
+.dispositivos__lista {
+    display: flex; /* Define um layout*/
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 5em 0; /* Define a margem superior e inferior */
+}
+
+.dispositivos {
+    text-align: center; /* Centraliza o texto */
+}
+
+
+.dispositivos__titulo {
+    font-size: 48px; /* Define o tamanho da fonte */
+    color: var(--branco-principal); /* Usa uma variável para a cor */
+}
+
+
+.lista__item {
+    font-size: 32px; 
+    color: var(--branco-principal); 
+}
+
+
+.rodape {
+    text-align: center; 
+    padding-bottom: 20px; /* Adiciona um preenchimento inferior */
+}
+
+
+.rodape__logo {
+    align-items: center; /* Alinha os itens ao centro */
+}
+
+
+.rodape__lista {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    margin: 1em; /* Define a margem ao redor */
+}
+
+
+.lista__link a {
+    font-size: 16px; 
+    font-weight: 400; /* Define a espessura da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+    color: var(--branco-principal); 
+}
+
+
+.rodape__texto {
+    margin-top: 1em; /* Adiciona uma margem superior */
+    text-align: center; 
+    font-size: 14px; 
+    font-weight: 400; 
+    color: var(--cinza-secundaria); 
+}
+
+
+.lista__link a:hover {
+    color: var(--botao-azul); /* Altera a cor no hover */
+}
+
+
+.lista__link a:active {
+    color: var(--botao-azul-efeito-); /* Altera a cor quando ativo */
+}
+
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito-); /* Altera a cor de fundo no hover */
+    color: var(--cor-de-fundo); /* Altera a cor do texto no hover */
+}
+
